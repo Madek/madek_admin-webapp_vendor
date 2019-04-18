@@ -1,0 +1,104 @@
+current directory: /Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.6.8.1/ext/nokogiri
+/Users/michal/.rvm/rubies/ruby-2.6.0/bin/ruby -I /Users/michal/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0 -r ./siteconf20190418-64175-1nviqui.rb extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.1.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+sh: CC_WRAPPER: command not found
+checking for iconv using --with-opt-* flags... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.4.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.4.tar.gz into tmp/x86_64-apple-darwin17.7.0/ports/libxml2/2.9.4... OK
+Running 'configure' for libxml2 2.9.4... ERROR, review '/Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.6.8.1/ext/nokogiri/tmp/x86_64-apple-darwin17.7.0/ports/libxml2/2.9.4/configure.log' to see what happened. Last lines are:
+========================================================================
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-apple-darwin17.7.0
+checking host system type... x86_64-apple-darwin17.7.0
+checking for a BSD-compatible install... /usr/local/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for x86_64-apple-darwin17.7.0-strip... no
+checking for strip... strip
+checking for a thread-safe mkdir -p... /usr/local/bin/gmkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-apple-darwin17.7.0-gcc... $(CC_WRAPPER) gcc
+checking whether the C compiler works... no
+configure: error: in `/Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.6.8.1/ext/nokogiri/tmp/x86_64-apple-darwin17.7.0/ports/libxml2/2.9.4/libxml2-2.9.4':
+configure: error: C compiler cannot create executables
+See `config.log' for more details
+========================================================================
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/michal/.rvm/rubies/ruby-2.6.0/bin/$(RUBY_BASE_NAME)
+	--help
+	--clean
+	--use-system-libraries
+	--enable-static
+	--disable-static
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--enable-cross-build
+	--disable-cross-build
+/Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:366:in `block in execute': Failed to complete configure task (RuntimeError)
+	from /Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:337:in `chdir'
+	from /Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:337:in `execute'
+	from /Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:106:in `configure'
+	from /Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:149:in `cook'
+	from extconf.rb:365:in `block (2 levels) in process_recipe'
+	from extconf.rb:258:in `block in chdir_for_build'
+	from extconf.rb:257:in `chdir'
+	from extconf.rb:257:in `chdir_for_build'
+	from extconf.rb:364:in `block in process_recipe'
+	from extconf.rb:263:in `tap'
+	from extconf.rb:263:in `process_recipe'
+	from extconf.rb:556:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/michal/projects/madek/admin-webapp/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-17/2.6.0/nokogiri-1.6.8.1/mkmf.log
+
+extconf failed, exit code 1
